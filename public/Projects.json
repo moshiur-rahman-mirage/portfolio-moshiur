@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "../img/animatedcontest.jpg",
+      "image": "../img/contesthub-client.png",
       "name": "Contest Hub",
       "description": "Contest Participation and posting website. Here creator create contest and user can participate on that contest.",
       "github_link": "https://github.com/moshiur-rahman-mirage/contest-hub-website",

@@ -8,6 +8,7 @@ import banner3 from "../../../public/img/banner3.jpg";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import CircleIcons from "../Circleicon/CircleIcons";
 import Techicons from "../Techicons/Techicons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const words = [
@@ -46,6 +47,19 @@ const Hero = () => {
     // Add dependencies to the dependency array
   }, [wordIndex, isDeleting, text]);
 
+
+    const handleDownload = () => {
+      const resumeUrl = 'https://drive.google.com/file/d/11zsdfWcVGDNB5AUhWJn76P__Zt9KEGcY/view?usp=drive_link';
+      window.open(resumeUrl, '_blank');
+    };
+
+    const recipientEmail='moshiur.mirage@gmail.com'
+    const handleSendMail = () => {
+      const mailtoLink = `mailto:${recipientEmail}`;
+      window.location.href = mailtoLink;
+    };
+
+
   return (
     <div id="About" className="flex md:flex-row flex-col mx-auto bg-gradient-to-r from-[#063D62] to-[#ffd89b]">
       <div className="carousel mx-auto w-[90%] md:w-[50%] min-h-screen  rounded-xl">
@@ -71,10 +85,10 @@ const Hero = () => {
                 {/* I am a {text}{" "} */}
               </h1>
               <div className="flex lg:flex-row md:flex-col mt-20 md:gap-5  lg:gap-10 flex-col gap-2">
-                <button className="btn  btn-ghost hover:bg-slate-500 border-lime-50 rounded-r-full rounded-l-full md:w-30 lg:w-60">
+                <button onClick={handleDownload} className="btn  btn-ghost hover:bg-slate-500 border-lime-50 rounded-r-full rounded-l-full md:w-30 lg:w-60">
                   Download Resume
                 </button>
-                <button className="btn  btn-ghost hover:bg-slate-500 border-lime-50 rounded-r-full rounded-l-full md:w-30 lg:w-60">
+                <button onClick={handleSendMail}  className="btn  btn-ghost hover:bg-slate-500 border-lime-50 rounded-r-full rounded-l-full md:w-30 lg:w-60">
                   Mail Me
                 </button>
               </div>
