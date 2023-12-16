@@ -5,7 +5,8 @@
       "name": "Project One",
       "description": "A cutting-edge project showcasing innovative solutions.",
       "github_link": "https://github.com/user/project-one",
-      "demo_link": "https://demo.projectone.com"
+      "demo_link": "https://demo.projectone.com",
+      "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
     },
     {
       "id": 2,
@@ -13,7 +14,8 @@
       "name": "Project Two",
       "description": "An exciting venture into the world of software development.",
       "github_link": "https://github.com/user/project-two",
-      "demo_link": "https://demo.projecttwo.com"
+      "demo_link": "https://demo.projecttwo.com",
+      "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
     },
     {
       "id": 3,
@@ -21,31 +23,9 @@
       "name": "Project Three",
       "description": "A dynamic project with a focus on user experience.",
       "github_link": "https://github.com/user/project-three",
-      "demo_link": "https://demo.projectthree.com"
-    },
-    {
-      "id": 4,
-      "image": "../img/banner1.jpg",
-      "name": "Project Four",
-      "description": "Exploring new possibilities in the digital realm.",
-      "github_link": "https://github.com/user/project-four",
-      "demo_link": "https://demo.projectfour.com"
-    },
-    {
-      "id": 5,
-      "image": "../img/banner1.jpg",
-      "name": "Project Five",
-      "description": "An elegant solution to modern software challenges.",
-      "github_link": "https://github.com/user/project-five",
-      "demo_link": "https://demo.projectfive.com"
-    },
-    {
-      "id": 6,
-      "image": "../img/banner1.jpg",
-      "name": "Project Six",
-      "description": "Innovating and delivering excellence in every line of code.",
-      "github_link": "https://github.com/user/project-six",
-      "demo_link": "https://demo.projectsix.com"
+      "demo_link": "https://demo.projectthree.com",
+      "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
     }
+   
   ]
   

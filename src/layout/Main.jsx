@@ -14,7 +14,7 @@ const Main = () => {
   });
 
   return (
-    <div className="relative bg-[#002B37]">
+    <div className="relative  text-black">
       <div className="">
         <motion.div
           className="top-0 left-0 right-0 h-[5px] fixed bg-red-600 z-50  transform origin-left"

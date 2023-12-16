@@ -25,10 +25,9 @@ const CircleIcons = () => {
   const buttonStyle = {
     position: 'absolute',
     bottom: '25%',
-    left: '80%',
+    left: '90%',
     transform: 'translateX(-100%)',
-    background: 'transparent',
-    border: 'none',
+   
     cursor: 'pointer',
     zIndex: 1, // Ensure the button is above the icons
   };
@@ -84,7 +83,7 @@ const CircleIcons = () => {
             className="md:text-5xl text-2xl bg-red-100 rounded-full"
           />
         ))}
-         <button style={buttonStyle} className='bg-red-300 p-2 border-white btn-ghost rounded-full text-black font-semibold border-2'>Skills</button>
+         <button style={buttonStyle} className=' text-4xl  btn-ghost rounded-full text-black font-semibold border-2'>Skills</button>
       </div>
     </div>
   );

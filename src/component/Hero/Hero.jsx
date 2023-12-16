@@ -61,7 +61,7 @@ const Hero = () => {
                 className="text-xl md:text-3xl lg:text-4xl flex-wrap w-3/4  md:w-1/2 font-semibold uppercase whitespace-pre-wrap"
                 text="Hello, I am Moshiur Rahman Taz Mirage"
               /> */}
-              <h2 className="text-xl">Hello There,</h2>
+              <h2 className="md:text-4xl text-xl">Hello There,</h2>
               <h1 className="text-md md:text-xl lg:text-2xl flex-wrap w-full font-light md:w-full whitespace-pre-wrap">
               Welcome to my Portfolio! I'm Moshiur Rahman Taz Mirage, a dedicated Software Engineer at Orange Solutions Ltd. In my current role, I specialize in crafting robust backend logic for databases. While excelling in database design, I am actively seeking opportunities to broaden my horizons with full-stack development.
               </h1>

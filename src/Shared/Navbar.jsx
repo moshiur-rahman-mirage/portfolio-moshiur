@@ -41,7 +41,7 @@ const MenuButton = ({ item, className = "" }) => {
         initial="rest"
       >
         <ScrollLink
-          className={`${className} lg:mx-10 md:mx-5 mx-2 md:text-xl text-xs text-left uppercase`}
+          className={`${className} lg:mx-10 md:mx-5 mx-2 md:text-xl text-xs text-left uppercase cursor-pointer`}
           to={`${item}`}
           smooth={true}
           offset={-70} // Adjust the offset based on your layout (e.g., navbar height)
@@ -150,7 +150,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3"
+            className="w-6 mr-3 bg-slate-500"
           >
             <GithubIcon />
           </motion.a>

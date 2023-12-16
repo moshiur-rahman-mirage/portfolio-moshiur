@@ -1,35 +1,38 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
-const ProjectCard = ({ project }) => {
-  const { id, image, name, description, github_link, demo_link } = project;
-  const handleGitClick=(github_link)=>{
-    window.location.href = {github_link};
+const ProjectCard = ({ open, project, onClick }) => {
+  const { id, image, name, description,technology, github_link, demo_link } = project;
+  const isOddId = id % 2 !== 0;
+  const flexClass = isOddId ? "md:flex-row-reverse md:text-white border-black text-white md:border-white" : "md:flex-row md:text-black text-white md:border-black";
+  const btnclass = isOddId ? " border-white" : "border-black";
+  const bgclass = isOddId ?  "bg-[#063D62]" : "bg-[#ffd89b]"; 
+
+
+  const handleButtonClick=(link)=>{
+    window.open(link, '_blank');
+    // console.log(link)
   }
-  const handleDemoClick=(demo_link)=>{
-    window.location.href = {demo_link};
-  }
+
+
   return (
-    <motion.div className="card w-96 bg-transparent text-white border-white border-2 shadow-xl" whileHover={{ scale: 1.01 }}>
-      <figure>
-        <img
-          src={image}
-          alt="Shoes"
-        />
+    <div className={`flex items-between   rounded-lg p-2 ${flexClass} ${bgclass} flex-col 
+    justify-around md:gap-10 gap-0 w-full`}>
+      <figure className="">
+        <img src={image} alt="Shoes" className=" object-cover w-[900px]" />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          {name}
-          
-        </h2>
-        <p>{description}</p>
-        <div className="card-actions items-center justify-center pt-5">
-          <Link className="btn  border-2 border-black bg-[#7EC482]" to={github_link}>Github Link</Link>
-          <Link className="btn  border-2 border-black bg-[#7EC482]" to={demo_link}>Demo Link</Link>
-        </div>
+      <div className=" pl-10 flex flex-col gap-2 mt-10">
+          <h1 className="text-2xl text-left font-semibold">{name}</h1>
+          <p className="text-2xl">{description}</p>
+          <p className="md:text-xl text-md">{technology}</p>
+          <div className="flex flex-row mt-10 gap-5">
+            <button className={`btn btn-ghost rounded-r-full rounded-l-full border-2 ${btnclass}`} target="_blank" onClick={()=>{handleButtonClick(github_link)}}>Github Link <MdOutlineArrowOutward/> </button>
+            <button className={`btn btn-ghost rounded-r-full rounded-l-full border-2 ${btnclass}`} target="_blank" onClick={()=>{handleButtonClick(demo_link)}}>Demo Link <MdOutlineArrowOutward/></button>
+          </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
