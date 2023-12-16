@@ -1,29 +1,29 @@
 [
     {
       "id": 1,
-      "image": "../img/banner1.jpg",
-      "name": "Project One",
-      "description": "A cutting-edge project showcasing innovative solutions.",
-      "github_link": "https://github.com/user/project-one",
-      "demo_link": "https://demo.projectone.com",
-      "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
+      "image": "../img/brandshop.jpg",
+      "name": "Brand Shop",
+      "description": "This Is a simple Brandshop website. This Shop Sells Technology Products..",
+      "github_link": "https://github.com/moshiur-rahman-mirage/Brandshop",
+      "demo_link": "https://brandshop-c5e49.web.app",
+      "technology":"ReactJs,DaisyUI,Tailwind,MongoDB"
     },
     {
       "id": 2,
-      "image": "../img/banner1.jpg",
-      "name": "Project Two",
-      "description": "An exciting venture into the world of software development.",
-      "github_link": "https://github.com/user/project-two",
-      "demo_link": "https://demo.projecttwo.com",
-      "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
+      "image": "../img/animatedcontest.jpg",
+      "name": "Contest Hub",
+      "description": "Contest Participation and posting website. Here creator create contest and user can participate on that contest.",
+      "github_link": "https://github.com/moshiur-rahman-mirage/contest-hub-website",
+      "demo_link": "https://moshiurs-contesthub.web.app/",
+      "technology":"ReactJs,DaisyUI,Mongoose,Tanstack,Payment"
     },
     {
       "id": 3,
-      "image": "../img/banner1.jpg",
-      "name": "Project Three",
-      "description": "A dynamic project with a focus on user experience.",
-      "github_link": "https://github.com/user/project-three",
-      "demo_link": "https://demo.projectthree.com",
+      "image": "../img/testy.jpg",
+      "name": "Testy Resturant",
+      "description": "This Is a resturant website, I have named this as Tasty. In this project i have only added Frontend. backend is also available in my profile. Please feel free to check.",
+      "github_link": "https://github.com/moshiur-rahman-mirage/Tasty-resturant",
+      "demo_link": "https://resturant-9e927.web.app/",
       "technology":"ReactJs,DaisyUI,NodeJS,Tailwind,MongoDB"
     }
    

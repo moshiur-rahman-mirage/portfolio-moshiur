@@ -4,7 +4,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li className="md:my-8  my-4 first:mt-0 last:mb-9 md:w-[60%] w-[90%] md:mx-auto flex flex-col items-start justify-between">
       <div>
-        <h3 className="font-bold text-black py-5 px-5 capitalize text-md text-left md:text-2xl">
+        <h3 className="font-bold text-black text-xl py-5 px-5 capitalize  text-left md:text-2xl">
           {position}&nbsp;
           <a className="text-primary " target="_blank" href={companyLink}>
             @{company}
@@ -13,7 +13,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="text-dark/70 pb-2 py-5 px-5 md:font-medium text-black capitalize">
           {time} | {address}
         </span>
-        <p className="md:font-medium pt-2 px-5 text-sm md:text-md text-black w-full">{work}</p>
+        <p className="md:font-medium pt-2 px-5 text-xl text-black w-full">{work}</p>
       </div>
     </li>
   );
@@ -27,8 +27,8 @@ const Experience = () => {
   });
 
   return (
-    <div id="Education" className="md:mt-36 pb-6 py-6">
-      <h2 className="font-bold  mt-20 md:text-5xl text-black text-xl md:mb-32 md:mt-6 mb-3 w-full text-center">
+    <div id="Education" className="md:mt-16 pb-16 ">
+      <h2 className="font-bold  mt-20 md:text-5xl text-black text-xl md:mb-16 md:mt-6 mb-3 w-full text-center">
         My Journey
       </h2>
       <div ref={ref} className=" flex justify-start items-start relative">
@@ -48,8 +48,10 @@ const Experience = () => {
             company="Orange Solutions Ltd."
             time="2020-Present"
             address="United Group, Satarkul, Dhaka"
-            work="Here our main product is ERP Software, and i develop backend logic for this. I have worked on various ERP Project.
-            For Example : United Hospital, Shamsul Alamin Real Estate Group and Gazi group. I have achieved vast industry experience through this.
+            work="In my role, I am actively engaged in developing the backend logic for our flagship product, 
+            ERP Software. My experience spans across diverse ERP projects, including prominent entities such as 
+            United Hospital, Shamsul Alamin Real Estate Group, and Gazi Group. These engagements have not only 
+            honed my technical skills but also provided me with extensive industry expertise.
             "
           />
           <Details
@@ -57,14 +59,14 @@ const Experience = () => {
             company="ISDB"
             time="2019-2020"
             address="IDB Bhaban, Agargaon"
-            work="This is a IT scholarship, Here i have learned backend technologies like Java,Spring,JSP. Database Technologies: ORACLE & Mysql."
+            work="This IT scholarship program has provided me with a comprehensive learning experience in backend technologies, including Java, Spring, and JSP. Additionally, I've gained proficiency in Database Technologies such as Oracle and MySQL."
           />
           <Details
             position="Student"
             company="Jagannath University"
             time="2013-2018"
             address="9-10, Chittaranjan Avenue,Dhaka 1100"
-            work="I have completed My honours and Masters from here. My major was Zoology. Due to never ending thurst for technology i have shift my career towards Software Development."
+            work="I have successfully completed both my Honours and Masters degrees, specializing in Zoology. Driven by an insatiable passion for technology, I have transitioned my career towards the dynamic field of Software Development."
           />
         </ul>
       </div>

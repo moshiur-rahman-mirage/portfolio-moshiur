@@ -6,7 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const ProjectCard = ({ open, project, onClick }) => {
   const { id, image, name, description,technology, github_link, demo_link } = project;
   const isOddId = id % 2 !== 0;
-  const flexClass = isOddId ? "md:flex-row-reverse md:text-white border-black text-white md:border-white" : "md:flex-row md:text-black text-white md:border-black";
+  const flexClass = isOddId ? "md:flex-row-reverse text-white border-black  md:border-white" : "md:flex-row text-black md:border-black";
   const btnclass = isOddId ? " border-white" : "border-black";
   const bgclass = isOddId ?  "bg-[#063D62]" : "bg-[#ffd89b]"; 
 
@@ -18,8 +18,8 @@ const ProjectCard = ({ open, project, onClick }) => {
 
 
   return (
-    <div className={`flex items-between   rounded-lg p-2 ${flexClass} ${bgclass} flex-col 
-    justify-around md:gap-10 gap-0 w-full`}>
+    <div className={`flex items-between   rounded-lg md:p-2 mb-5 pb-5 ${flexClass} ${bgclass} flex-col 
+    justify-around md:gap-10 gap-5 w-full`}>
       <figure className="">
         <img src={image} alt="Shoes" className=" object-cover w-[900px]" />
       </figure>

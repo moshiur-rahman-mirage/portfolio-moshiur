@@ -41,7 +41,7 @@ const Projects = () => {
   };
   return (
     <div id="Projects" className="min-h-screen w-[90%]  pt-20 pb-10 mx-auto ">
-      <h1 className="text-4xl md:text-5xl  text-center text-black  md:mb-32">Some of My Recent Projects</h1>
+      <h1 className="text-4xl md:text-5xl  text-center text-black  md:mb-16 mb-6">Some of My Recent Projects</h1>
       <div className="grid place-items-center">
         {loading ? (
           <>
