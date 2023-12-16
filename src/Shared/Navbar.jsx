@@ -163,15 +163,7 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
-            href="https://linkedin.com"
-            target={"_blank"}
-            whileHover={{ y: -3 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 ml-3"
-          >
-            <TwitterIcon />
-          </motion.a>
+
         </nav>
       </div>
     </motion.div>

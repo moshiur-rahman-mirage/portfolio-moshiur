@@ -70,11 +70,7 @@ const Hero = () => {
            "
           >
             <div className=" md:text-white text-black space-y-7 w-full">
-              {/* <AnimatedText
-                varitants="quote"
-                className="text-xl md:text-3xl lg:text-4xl flex-wrap w-3/4  md:w-1/2 font-semibold uppercase whitespace-pre-wrap"
-                text="Hello, I am Moshiur Rahman Taz Mirage"
-              /> */}
+
               <h2 className="md:text-4xl text-xl">Hello There,</h2>
               <h1 className="text-md md:text-xl lg:text-2xl flex-wrap w-full font-light md:w-full whitespace-pre-wrap">
               Welcome to my Portfolio! I'm Moshiur Rahman Taz Mirage, a dedicated Software Engineer at Orange Solutions Ltd. In my current role, I specialize in crafting robust backend logic for databases. While excelling in database design, I am actively seeking opportunities to broaden my horizons with full-stack development.
@@ -82,7 +78,6 @@ const Hero = () => {
               <h1
                 className="text-xl md:text-3xl w-full lg:text-4xl "
               >
-                {/* I am a {text}{" "} */}
               </h1>
               <div className="flex lg:flex-row md:flex-col mt-20 md:gap-5  lg:gap-10 flex-col gap-2">
                 <button onClick={handleDownload} className="btn  btn-ghost hover:bg-slate-500 border-lime-50 rounded-r-full rounded-l-full md:w-30 lg:w-60">
@@ -97,7 +92,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex md:w-[50%]  flex-col items-center justify-center">
-        {/* <ProjectCard /> */}
+
        
         <CircleIcons/>
         <Techicons/>
